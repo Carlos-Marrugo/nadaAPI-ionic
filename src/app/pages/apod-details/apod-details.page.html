@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/apod-list"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Detalles de APOD
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngIf="apod">
+    <img [src]="apod.url" alt="{{ apod.title }}">
+    <ion-card-header>
+      <ion-card-title>{{ apod.title }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{ apod.explanation }}</p>
+      <p><strong>Fecha:</strong> {{ apod.date }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

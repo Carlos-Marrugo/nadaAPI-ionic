@@ -1,0 +1,7 @@
+{
+  "name": "nasa-api",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

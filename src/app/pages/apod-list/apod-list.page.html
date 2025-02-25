@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Listado de APOD
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let apod of apodList" (click)="viewDetails(apod)">
+      <ion-thumbnail slot="start">
+        <img [src]="apod.url" alt="{{ apod.title }}">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{ apod.title }}</h2>
+        <p>{{ apod.date }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

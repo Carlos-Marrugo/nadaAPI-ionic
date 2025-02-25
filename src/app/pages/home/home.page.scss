@@ -1,0 +1,14 @@
+ion-card {
+    --background: #f4f4f4; /* Fondo gris claro */
+    --color: #0b3d91; /* Color del texto azul de la NASA */
+    margin-bottom: 20px; /* Espacio debajo de la tarjeta */
+  }
+  
+  ion-card-title {
+    font-size: 24px; /* Tamaño del título */
+    font-weight: bold; /* Texto en negrita */
+  }
+  
+  ion-card-content {
+    font-size: 16px; /* Tamaño del texto */
+  }
